@@ -1,0 +1,27 @@
+class Student
+{
+  String reg;
+  String name;
+  int mark;
+  Student(String x, String y,int z)
+  {
+    reg=x;
+    name=y;
+    mark=z;
+  }
+  void display()
+  {
+    System.out.println("Register number : "+reg);
+    System.out.println("Name of the Student : "+name);
+    System.out.println("Mark : "+mark);
+
+  }
+}
+class Studentconstructor
+{
+  public static void main(String arg[])
+  {
+    Student obj=new Student("192321008","deepalakshmi",100);
+    obj.display();
+  }
+}

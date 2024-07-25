@@ -18,7 +18,7 @@ class Rectangleareaconstructor
 {
   public static void main(String arg[])
   {
-    Rec obj=new Rec(10.5,20.5);
+    Rec obj=new Rec(11.8,15.5);
     obj.volume();
   }
 }

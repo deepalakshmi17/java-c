@@ -1,0 +1,24 @@
+class Rec
+{
+  double l;
+  double b;
+  Rec(double x, double y)
+  {
+    l=x;
+    b=y;
+  }
+  void volume()
+  {
+    double area=l*b;
+    System.out.print("area of rectangle ="+area);
+
+  }
+}
+class Rectangleareaconstructor
+{
+  public static void main(String arg[])
+  {
+    Rec obj=new Rec(10.5,20.5);
+    obj.volume();
+  }
+}

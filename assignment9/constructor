@@ -1,0 +1,34 @@
+class Grade
+{
+  double m1,m2,m3,m4;
+  Grade(int w, int x, int y, int z)
+  {
+    m1=w;
+    m2=x;
+    m3=y;
+    m4=z;
+  }
+  void display()
+  {
+    double agg=(m1+m2+m3+m4)/4;
+    System.out.println("The aggregate of the student : "+agg+"%");
+    if(agg>75)
+      System.out.println("Distinction");
+    else if(agg<75&&agg>=60)
+      System.out.println("Grade - First Division");
+    else if(agg<60&&agg>=50)
+      System.out.println("Grade - Second Division");
+    else if(agg<50&&agg>=40)
+      System.out.println("Grade - Third Division");
+    else
+      System.out.println("Grade - Fail");
+  }
+}
+class Studentgrade
+{
+   public static void main(String ar[])
+   {
+     Grade obj=new Grade(77,85,43,27);
+     obj.display();
+   }
+}

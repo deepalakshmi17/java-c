@@ -1,0 +1,18 @@
+import java.util.*;
+class Factorial3
+{
+  public static void main(String arg[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n,i=1,fact=1;
+    System.out.println("enter the number for which you want to find factorial ");
+    n=sc.nextInt();
+    do
+    { 
+      fact=fact*i;
+      i++;
+    }
+    while(i<=n);
+    System.out.println("the factorial is = "+fact);
+  }
+}

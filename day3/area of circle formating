@@ -1,0 +1,16 @@
+import java.util.*;
+class Circleformat {
+    public static void main(String arg[]) 
+    {
+        Scanner sc = new Scanner(System.in);
+        double r, area;
+        
+        System.out.println("Enter the radius:");
+        r = sc.nextDouble();
+        
+        area = r * r * 3.14;
+        
+        System.out.println("The area of the circle = " + area);
+        System.out.format("The area of the circle = %.2f", area);
+    }
+}

@@ -1,0 +1,21 @@
+import java.util.*;
+class Table3
+{
+  public static void main(String arg[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n,i,m,k;
+    System.out.println("enter the number for which table you want");
+    n=sc.nextInt();
+    System.out.println("enter the number to diplay from where");
+    m=sc.nextInt();
+    System.out.println("enter the number to diplay till where");
+    k=sc.nextInt();
+    do
+    { 
+      System.out.println(n+"*"+m+"="+n*m);
+      m++;
+    }
+    while(m<=k);
+  }
+}

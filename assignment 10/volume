@@ -1,0 +1,37 @@
+class Area 
+{
+  double r;
+  void get(double x)
+  {
+    r=x;
+  }
+  void disp()
+  {
+    double area=4*3.14*r*r;
+    System.out.println("the area of the sphere = "+area);
+  }
+}
+class Volume extends Area
+{
+  double volume;
+  void get1(double y)
+  {
+    r=y;
+  }
+  void disp1()
+  {
+    volume = (4.0/3.0)*3.14*r*r*r;
+    System.out.println("the volume of the sphere = "+volume);
+  }
+}
+class AreaVolumofsphereSI
+{
+  public static void main(String arg[])
+  {
+    Volume obj=new Volume();
+    obj.get(2.5);
+    obj.disp();
+    obj.get1(3.4);
+    obj.disp1();
+  }
+}

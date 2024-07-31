@@ -1,0 +1,55 @@
+import java.util.*;
+class Student 
+{
+    Scanner sc=new Scanner(System.in);
+    int marks[] = new int[6];
+    double total=0;
+    double aggregate;
+    void Cal() 
+    {
+      for(int i=0;i<6;i++)
+      {
+        System.out.println("enter subject "+(i+1)+" mark :");
+        marks[i]=sc.nextInt();
+        total=total+marks[i];
+      }
+      System.out.println("Total Marks: " + total);
+      aggregate=total/6;
+      System.out.println("Aggregate Percentage: " + aggregate + "%");
+    }
+}
+class Grade extends Student 
+{
+  void display()
+  {
+    if(aggregate>75) 
+    {
+       System.out.println("Distinction");
+    } 
+    else if(aggregate>=60) 
+    {
+       System.out.println("First Division");
+    } 
+    else if(aggregate>=50) 
+    {
+       System.out.println("Second Division");
+    } 
+    else if(aggregate>=40)
+    {
+       System.out.println("Third Division");
+    } 
+    else 
+    {
+       System.out.println("FAIL");
+    }
+  }
+}
+class StudentGradesSI 
+{
+  public static void main(String arg[]) 
+  {
+     Grade obj=new Grade();
+     obj.Cal();
+     obj.display();
+  }
+}

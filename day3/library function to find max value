@@ -1,0 +1,8 @@
+class Libtest3 
+{
+public static void main(String arg[])
+{
+double x=Math.min(2,5);
+System.out.println("output="+x);
+}
+}

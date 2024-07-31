@@ -1,0 +1,17 @@
+import java.util.*;
+class Display3
+{
+  public static void main(String arg[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int n;
+    System.out.println("enter the number from which you want to display");
+    n=sc.nextInt();
+    do
+    { 
+      System.out.println(n);
+      n++;
+    }
+    while(n<10);
+  }
+}

@@ -1,0 +1,19 @@
+class Armstrong
+{
+  public static void main(String arg[])
+  {
+    int num=153,rev=0,rem=0,temp=num;
+    while(num!=0)
+    { 
+      rem=num%10;
+      rev=rev+rem*rem*rem;
+      num=num/10;
+    }
+    if(temp==rev){
+      System.out.println("the given number is Armstrong number");
+     }
+    else{
+      System.out.println("the given number is not a Armstrong number");
+     }
+   }
+}

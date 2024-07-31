@@ -1,0 +1,23 @@
+import java.util.*;
+class Posneg
+{
+public static void main(String arg[])
+{
+Scanner sc=new Scanner(System.in);
+int a;
+System.out.println("enter the a value");
+a=sc.nextInt();
+if(a<0)
+{
+System.out.println("the given number is negative");
+}
+else if(a>0)
+{
+System.out.println("the given number is positive");
+}
+else
+{
+System.out.println("the given number is zero");
+}
+}
+}
